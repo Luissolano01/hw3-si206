@@ -18,8 +18,9 @@ class Crystal_Ball:
     # it sets this object's prediction_history_list (instance variable) to an empty list
     # it sets this object's name_history_list (instance variable) to an empty list 
 
-    def __init__(self, prediction_list=[], name_list=[]):          # possible_predictions or predictions_list??????????????????????
-                                 # how to pass this list correctly 
+    def __init__(self, prediction_list, name_list):          
+        prediction_list = prediction_list
+        name_list = name_list           # how to pass this list correctly 
         self.prediction_history_list = []
         self.name_history_list = []
     
@@ -28,7 +29,7 @@ class Crystal_Ball:
     # in prediction_list separated by commas
     
     def __str__(self, prediction_list):
-        seperated_by_commas = ','.join(prediction_list)      # what needs "self. "
+        seperated_by_commas = ','.join(prediction_list)      
         str(seperated_by_commas)
         print(seperated_by_commas)
 
