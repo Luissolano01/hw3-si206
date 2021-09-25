@@ -56,7 +56,7 @@ class Crystal_Ball:
     # Otherwise it returns the prediction from predict
 
     def check_name(self, name):
-        possible_repeat = self.name_list.count(name)        # does this account for strings or just ints?
+        possible_repeat = self.name_list.count(name)        # does this work for strings or just ints?
         if possible_repeat  > 0:
             print("I already have that name!")
         else:
@@ -84,7 +84,6 @@ class Crystal_Ball:
     # It prints the counts for each prediction index, and
     # prints the most frequently occurring prediction index and prediction
 
-'''
 def main():
 
     # Replace the prediction_list with your desired predictions!
@@ -98,19 +97,20 @@ def main():
     bot = Crystal_Ball(prediction_list, name_list)
 
     # get the first name or quit
-
     name = input("Give first name or type quit")
     # loop while name is not "quit"
     while name != "Quit" or "quit":
         # get the result from check_name
-        bot.check_name(name)                 # bot. added correct or?
+        bot.check_name(name)                 # bot. added correctly or?
        
         name_check = bot.check_name
         # print name - result from check_name
         print(name + " - " + name_check)
         # get the next name or quit
         name = input("Give first name or type quit")
- '''
+ 
+
+
 def test():
 
     prediction_list = ["Is going to take a class with ",
