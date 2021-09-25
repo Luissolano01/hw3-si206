@@ -128,7 +128,7 @@ def test():
     print("Testing the __str__ method")
     print(bot2)
     print()
-'''
+
     print("Printing the history when no predictions have been generated yet")
     bot2.print_history()
     print()
@@ -152,7 +152,7 @@ def test():
     print("Printing name_list")
     print(bot2.name_list())      # changed bot2.check_name_list() to bot2.name_list()
     print()
-'''
+
     #EXTRA POINTS
     #Uncomment the lines below if you attempt the extra credit!
     # print("Testing most_frequent method")
@@ -161,5 +161,5 @@ def test():
 
 # only run the main function if this file is being run (not imported)
 if __name__ == "__main__":
-    #main()                                         #commented main out temporarily 
+    main()                                         #commented main out temporarily 
     test()
