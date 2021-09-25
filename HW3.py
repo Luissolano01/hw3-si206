@@ -20,7 +20,7 @@ class Crystal_Ball:
 
     def __init__(self, prediction_list, name_list):          
         prediction_list = prediction_list
-        name_list = name_list           # how to pass this list correctly 
+        name_list = name_list           # how to pass this list correctly ?
         self.prediction_history_list = []
         self.name_history_list = []
     
@@ -60,7 +60,7 @@ class Crystal_Ball:
         if possible_repeat  > 0:
             print("I already have that name!")
         else:
-            print(self.selected_prediction_and_name)  # how to communicate to previous method
+            print(self.selected_prediction_and_name)  
 
     # create the print_history method
     # prints "[prediction index] prediction - [name index] name" for each of the indices in the prediction_history_list
@@ -68,8 +68,8 @@ class Crystal_Ball:
     # prediction_history_list it prints "None yet"
     # it does not return anything!
 
-    def print_history(self):                                   # what parameters are used
-        for x in range(len(self.prediction_history_list)):    # how to communicate to previous 
+    def print_history(self):                                   
+        for x in range(len(self.prediction_history_list)):    
             for x in range(len(self.name_history_list)):
                 print(self.prediction_history_list[x] + " prediction at index - " + self.name_history_list[x] + " name at index")
         if not self.prediction_history_list:
@@ -161,5 +161,5 @@ def test():
 
 # only run the main function if this file is being run (not imported)
 if __name__ == "__main__":
-    main()                                         #commented main out temporarily 
+    main()                                         
     test()
